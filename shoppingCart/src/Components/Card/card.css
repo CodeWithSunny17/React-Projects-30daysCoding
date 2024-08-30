@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    /* width: 49%; */
+  
+    .image {
+      img {
+        padding: 4px;
+        width: 200px;
+        height: 200px;
+        /* object-fit: cover; */
+        object-fit: contain;
+      }
+    }
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-right: 4px;
+  
+      .title {
+        font-weight: 500;
+      }
+      .price {
+        font-size: 15px;
+        height: 30px;
+      }
+      .description {
+        font-size: 12px;
+        height: 50px;
+        overflow: hidden;
+      }
+      button {
+        background-color: orange;
+        width: 200px;
+        font-size: 15px;
+        color: black;
+      }
+    }
+  }
+  

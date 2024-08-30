@@ -1,0 +1,25 @@
+.navbar {
+    max-height: 10vh;
+    padding: 15px 40px;
+    background-color: rgb(32, 57, 82);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    .brand {
+    }
+    .cart {
+      /* border: 1px solid grey; */
+      /* background-color: aquamarine; */
+      cursor: pointer;
+      span{
+        position: relative;
+        top: -8px;
+        font-size: 12px;
+        padding: 0px 2px;
+        background-color: red;
+        border-radius: 50%;
+      }
+    }
+  }
+  
