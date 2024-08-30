@@ -13,7 +13,7 @@ export default function Shopping() {
         const response = await fetch("https://fakestoreapi.com/products");
         const data = await response.json();
         setProducts(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {
@@ -23,9 +23,10 @@ export default function Shopping() {
     fetchProducts();
   }, []);
 
-  if (loading) {
+  if (loading, handleClick) {
     return <div>Loading...</div>;
   }
+
 
   return (
     <div className="shopping">
@@ -42,6 +43,7 @@ export default function Shopping() {
               image={products.image}
               price={products.price}
               description={products.description}
+              handleClick={handleClick}
             />
           );
         })}

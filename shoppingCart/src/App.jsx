@@ -4,12 +4,17 @@ import Navbar from './Components/Navbar/Navbar'
 import Shopping from './Components/Shopping/Shopping'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cart, setCart] = useState([]);
+
+  const handleClick = (key) => {
+    setCart(key.count)
+    console.log(cart)
+  }
 
   return (
     <>
       <Navbar/>
-      <Shopping/>
+      <Shopping handleClick={handleClick(key)}/>
     </>
   )
 }
