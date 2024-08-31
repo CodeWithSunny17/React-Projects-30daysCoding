@@ -11,8 +11,7 @@ export default function Card({products, handleClick}) {
         <span className="title">{products.title}</span>
         <span className="price">${products.price}</span>
         <span className="description">{products.description}</span>
-        <button 
-        onClick={()=>handleClick(products)}>Add to Cart</button>
+        <button className="button" onClick={()=>handleClick(products)}>Add to Cart</button>
       </div>
     </div>
   );

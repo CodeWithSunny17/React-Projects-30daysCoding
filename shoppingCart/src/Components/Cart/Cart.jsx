@@ -24,6 +24,8 @@ export default function Cart({ setCartOpen, cart }) {
 
   return (
     <div className='AddToCart'>
+      <div className="wrapper">
+
       <span onClick={() => setCartOpen(false)} className="close-btn">x</span>
 
       <div className="cart-header">
@@ -47,7 +49,9 @@ export default function Cart({ setCartOpen, cart }) {
       )}
       <div className="cart-footer">
             <h3>Grand Total: ${grandTotal.toFixed(2)}</h3>
-          </div>
+            <button>Proceed to pay</button>
+      </div>
+      </div>
     </div>
   );
 }

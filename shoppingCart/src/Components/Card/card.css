@@ -33,11 +33,14 @@
         height: 50px;
         overflow: hidden;
       }
-      button {
+      .button {
         background-color: orange;
         width: 200px;
         font-size: 15px;
         color: black;
+      }
+      .button:active {
+        background-color: rgb(202, 131, 0);
       }
     }
   }
