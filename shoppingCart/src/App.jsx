@@ -6,15 +6,15 @@ import Shopping from './Components/Shopping/Shopping'
 function App() {
   const [cart, setCart] = useState([]);
 
-  const handleClick = (key) => {
-    setCart(key.count)
+  const handleClick = (products) => {
+    setCart([...cart, products]);
     console.log(cart)
   }
 
   return (
     <>
-      <Navbar/>
-      <Shopping handleClick={handleClick(key)}/>
+      <Navbar size={cart.length}/>
+      <Shopping handleClick={handleClick}/>
     </>
   )
 }

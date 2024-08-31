@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 import { useState, useEffect } from "react";
 import "./shopping.css";
 
-export default function Shopping() {
+export default function Shopping({handleClick}) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -23,7 +23,7 @@ export default function Shopping() {
     fetchProducts();
   }, []);
 
-  if (loading, handleClick) {
+  if (loading) {
     return <div>Loading...</div>;
   }
 
@@ -38,11 +38,12 @@ export default function Shopping() {
         {products.map((products) => {
           return (
             <Card
-              title={products.title}
+              // title={products.title}
               key={products.id}
-              image={products.image}
-              price={products.price}
-              description={products.description}
+              // image={products.image}
+              // price={products.price}
+              // description={products.description}
+              products={products}
               handleClick={handleClick}
             />
           );
