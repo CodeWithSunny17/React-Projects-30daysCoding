@@ -34,10 +34,20 @@
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
-  }
-  
-  .cart-item div {
-    font-size: 16px;
+
+    .img-title{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        .title {
+            font-size: 16px;
+          }
+        img{
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            }
+    }
   }
   
   .price-qty{
