@@ -6,16 +6,22 @@ import Cart from './Components/Cart/Cart'
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [cartOpen, setCartOpen] =useState(false);
 
   const handleClick = (products) => {
     setCart([...cart, products]);
     console.log(cart)
   }
+  console.log(cartOpen)
 
   return (
     <>
-      <Navbar size={cart.length}/>
-      <Shopping handleClick={handleClick}/>
+      {cartOpen?<Cart setCartOpen={setCartOpen}/>:
+      <div>
+        <Navbar cart={cart} setCartOpen={setCartOpen}/>
+        <Shopping handleClick={handleClick}/>
+      </div>
+      }
     </>
   )
 }
