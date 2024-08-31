@@ -10,14 +10,14 @@ function App() {
 
   const handleClick = (products) => {
     setCart([...cart, products]);
-    console.log(cart)
+    // console.log(cart)
   }
-  console.log(cartOpen)
+  // console.log(cartOpen)
 
   return (
     <>
-      {cartOpen?<Cart setCartOpen={setCartOpen}/>:
-      <div>
+      {cartOpen?<Cart setCartOpen={setCartOpen} cart={cart}/>:
+      <div> 
         <Navbar cart={cart} setCartOpen={setCartOpen}/>
         <Shopping handleClick={handleClick}/>
       </div>

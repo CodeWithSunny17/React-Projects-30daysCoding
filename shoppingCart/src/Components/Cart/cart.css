@@ -1,4 +1,41 @@
-.AddToCart{
-    position: relative;
-    z-index: 1000;
-}
+.AddToCart {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff0000;
+  }
+  
+  .cart-header {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item div {
+    font-size: 16px;
+  }
+  
+  .price-qty{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    .price{
+        width: 150px;
+    }
+    .qty{
+        width: 150px;
+    }
+    .total{
+        width: 150px;
+    }
+  }

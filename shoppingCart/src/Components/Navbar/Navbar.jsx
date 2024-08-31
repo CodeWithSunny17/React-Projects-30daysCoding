@@ -3,7 +3,6 @@ import "./navbar.css";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 export default function Navbar({cart, setCartOpen}) {
-  console.log()
   return (
     <div className="navbar">
       <div className="brand">Amazon.in</div>
