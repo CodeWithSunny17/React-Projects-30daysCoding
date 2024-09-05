@@ -30,7 +30,7 @@ export default function Weather() {
             onChange={(e)=>{setInput(e.target.value)}}
             onKeyDown={search}/>
         </div>
-        {weatherData?<div className={weatherData.main.temp<24 ? "display cold" : "display warm"}>
+        {weatherData?<div className={weatherData.main.temp<20 ? "display cold" : "display warm"}>
             <h2>{weatherData.name}, {weatherData.sys?.country}</h2>
             <div>{weatherData.weather[0].main}</div>
             <h1>{Math.round(weatherData.main.temp*10)/10}°C</h1>
