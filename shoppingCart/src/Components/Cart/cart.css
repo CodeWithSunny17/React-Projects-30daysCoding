@@ -59,6 +59,13 @@
     }
     .qty{
         width: 120px;
+        button{
+          margin: 5px;
+          background-color: grey;
+          border-radius: 50%;
+          width: 45px;
+          /* height: 15px; */
+        }
     }
     .total{
         width: 120px;

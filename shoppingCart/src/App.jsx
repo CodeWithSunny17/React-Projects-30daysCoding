@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Navbar cart={cart} setCartOpen={setCartOpen}/>
-      {cartOpen?<Cart setCartOpen={setCartOpen} cart={cart}/>:
+      {cartOpen?<Cart setCartOpen={setCartOpen} cart={cart} setCart={setCart}/>:
       <div> 
         <Shopping handleClick={handleClick}/>
       </div>
