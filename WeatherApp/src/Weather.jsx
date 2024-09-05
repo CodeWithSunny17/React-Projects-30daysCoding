@@ -10,6 +10,7 @@ export default function Weather() {
     const [input, setInput] = useState('');
     const [weatherData, setWeatherData] = useState([])
 
+
     const search = (e)=>{
         if(e.key === 'Enter'){
             
@@ -26,9 +27,10 @@ export default function Weather() {
             onChange={(e)=>{setInput(e.target.value)}}
             onKeyDown={search}/>
         </div>
-        <div className="display">
+        {weatherData&& weatherData.main?<div className="display">
             <div>{weatherData.name}, {console.log(weatherData)}</div>
-        </div>
+            <div>{weatherData.main.temp}</div>
+        </div>: <></>}
     </div>
   )
 }
